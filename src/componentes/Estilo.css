@@ -1,0 +1,262 @@
+body {
+  background-color: white; /* Fondo de la página en blanco */
+  margin: 0; /* Eliminar márgenes por defecto */
+  font-family: Arial, sans-serif; /* Tipografía básica */
+}
+
+h1 {
+  color: black;
+  font-size: 2.5em; /* Tamaño de fuente relativo */
+}
+
+h3 {
+  color: rgb(5, 5, 5);
+  font-size: 1.5em; /* Tamaño de fuente relativo */
+}
+
+img {
+  display: block; /* Cambiado a block para evitar problemas de alineación */
+  width: 100%; /* Ancho responsivo */
+  max-width: 500px; /* Ancho máximo */
+  height: auto; /* Altura automática para mantener la proporción */
+}
+
+nav ul {
+  gap: 20px; /* Espaciado reducido para pantallas pequeñas */
+  display: flex;
+  flex-wrap: wrap; /* Permitir que los elementos se ajusten en múltiples líneas */
+}
+
+.d1 {
+  display: flex;
+  color: black;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  text-align: justify;
+  padding: 10px; /* Espaciado interno */
+  text-align: center;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 50px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.item {
+  background: #eeeeee;
+  padding: 20px;
+  color: rgb(12, 12, 12);
+  width: 100%; /* Ancho responsivo */
+  max-width: 300px; /* Ancho máximo */
+  margin: 1px; /* Espaciado entre elementos */
+  gap: 10px;
+}
+
+.proyectos {
+  color: aqua;
+  background: #ffffff;
+  text-align: center;
+  
+}
+button{
+  background-color: aqua;
+}
+
+/* Media Queries para pantallas más pequeñas */
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row; /* Cambiar a fila en pantallas grandes */
+  }
+
+  .item {
+    width: calc(33% - 20px); /* Tres elementos por fila */
+  }
+
+  nav ul {
+    gap: 40px; /* Espaciado mayor en pantallas grandes */
+  }
+}
+
+/**/
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos del encabezado */
+header {
+  background-image: url('https://imagenes.eltiempo.com/files/image_1200_535/uploads/2022/02/06/62003400dafe4.jpeg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 50px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 36px;
+  margin-top: 30px;
+}
+
+.portfolio-btn {
+  display: inline-block;
+  background-color: #00b8b8;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 4px;
+  margin-top: 30px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    background: #eee;
+    padding: 20px;
+    margin-left: 250px;
+    margin-right: 250px;
+    }
+.box {
+    background: #6a89cc;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    }
+/*Testimonios*/
+.container1 {
+  display: grid;
+  grid-template-columns: 2fr 2fr ;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.testimonial-card {
+  background-color: var(--primary);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  grid-gap: 20px;
+  align-items: center;
+  height: auto;
+
+}
+
+.profile-pic img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.testimonial-content {
+  font-size: 1rem;
+  line-height: 1.4;
+  
+}
+
+.testimonial-content h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+
+}
+
+.testimonial-content p {
+  margin-bottom: 10px;
+}
+
+/* Estilos específicos para cada tarjeta de testimonio */
+.testimonial-card:nth-child(1) {
+  flex-basis: 66.66%;
+  background-color: rgb(224, 213, 116);
+}
+
+.testimonial-card:nth-child(2) {
+  background-color: rgb(116, 132, 224);
+}
+
+.testimonial-card:nth-child(3) {
+  flex-basis: 66.66%;
+  background-color: rgb(116, 224, 152);
+}
+
+.testimonial-card:nth-child(4) {
+  background-color: rgb(224, 116, 197);
+}
+
+footer {
+  background-color: #00a99d;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.contact{
+  display: flex;
+  text-align: center;
+  margin-top: auto;
+  margin-left: 150px;
+  margin-right: 150px;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  padding: 10px; /* Espaciado interno */
+  text-align: center;
+  margin-left: 35%;
+  margin-right: 50;
+  gap: 30px;
+}
+
+ul.list-inline {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  
+}
+
+.list-inline-item {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.list-inline-item a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+.imgFo{
+  width: 300px;
+  height: 290px;
+}
+
+
