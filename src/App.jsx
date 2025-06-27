@@ -3,8 +3,8 @@ import './componentes/Estilo.css';
 import Menu from './componentes/Menu';
 import QuienSoy from './componentes/QuienSoy';
 import Proyectos from './componentes/Proyectos';
-import Expert from './componentes/expert';
-import Testimonial from './componentes/testimonial';
+import Expert from './componentes/Expert';
+import Testimonial from './componentes/Testimonial';
 import Contact from './componentes/Contact';
 function App() {
   return (
