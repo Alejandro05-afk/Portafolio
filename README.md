@@ -44,7 +44,7 @@ Testimonial.jsx: Componente para la sección de testimonios.
 Cómo Iniciar el Proyecto
 
 Clona el repositorio:
-git clone https://github.com/tu-usuario/portafolio-template.git
+git clone [https://github.com/tu-usuario/portafolio-template.git](https://github.com/Alejandro05-afk/Portafolio.git)
 
 Instala las dependencias:
 cd portafolio-template
