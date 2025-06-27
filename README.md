@@ -1,12 +1,54 @@
-# React + Vite
+# Portafolio Template
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es un proyecto de plantilla de portafolio web desarrollado con React y Vite.
 
-Currently, two official plugins are available:
+## Estructura de Archivos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+La estructura de archivos del proyecto se ve así:
 
-## Expanding the ESLint configuration
+  graph TD;
+    portafolio-template --> node_modules
+    portafolio-template --> public
+    portafolio-template --> src
+      src --> assets
+      src --> componentes
+        componentes --> Contact.jsx
+        componentes --> Estilo.css
+        componentes --> Expert.jsx
+        componentes --> Menu.jsx
+        componentes --> Proyectos.jsx
+        componentes --> QuienSoy.jsx
+        componentes --> Testimonial.jsx
+      src --> App.css
+      src --> App.jsx
+      src --> index.css
+      src --> main.jsx
+    portafolio-template --> .gitignore
+    portafolio-template --> eslint.config.js
+    portafolio-template --> index.html
+    portafolio-template --> package-lock.json
+    portafolio-template --> package.json
+    portafolio-template --> README.md
+    portafolio-template --> vite.config.js
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+    Componentes Principales
+Los principales componentes del proyecto son:
+
+Contact.jsx: Componente para la sección de contacto.
+Expert.jsx: Componente para la sección de expertos.
+Menu.jsx: Componente para el menú de navegación.
+Proyectos.jsx: Componente para la sección de proyectos.
+QuienSoy.jsx: Componente para la sección de quién soy.
+Testimonial.jsx: Componente para la sección de testimonios.
+
+Cómo Iniciar el Proyecto
+
+Clona el repositorio:
+git clone https://github.com/tu-usuario/portafolio-template.git
+
+Instala las dependencias:
+cd portafolio-template
+npm install
+
+Inicia el servidor de desarrollo:
+npm run dev
